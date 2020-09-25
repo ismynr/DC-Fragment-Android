@@ -1,5 +1,6 @@
 package com.ismynr.myflexiblefragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -61,7 +62,8 @@ class DetailCategoryFragment : Fragment(), View.OnClickListener {
     override fun onClick(v: View) {
         when(v.id){
             R.id.btn_profile -> {
-
+                val mIntent = Intent(activity, ProfileActivity::class.java)
+                startActivity(mIntent)
             }
 
             R.id.btn_show_dialog -> {
